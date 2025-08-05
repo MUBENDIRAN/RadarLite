@@ -5,13 +5,14 @@
 ![System](https://img.shields.io/badge/Linux-antiX--Debian--based-lightgrey)
 
 **Duration:** June 2025  
-**Affiliation:** Rajalakshmi Institute of Technology
 
 ---
 
 ## 🌐 Overview
 
-**RadarLite** is a radar-like environmental scanning system that uses an **ESP32-C6 Mini**, a **continuous rotation servo**, and an **ultrasonic sensor** to detect objects in a 360° field. The sensor captures distance data as it rotates forward and backward, and transmits this data via serial communication to a **Java-based Processing** app, which visualizes the scanned environment in real time.
+**RadarLite** is a radar-like environmental scanning system that uses an **ESP32-C6 Mini**, a **continuous rotation servo**, and an **ultrasonic sensor** to detect objects in a 360° field. The sensor captures distance data as it rotates forward and backward, and transmits this data via serial communication to a **Processing** app, which visualizes the scanned environment in real time.
+
+> Compact, responsive, and ideal for real-time visualization of physical spaces in robotics and embedded systems research.
 
 ---
 
@@ -27,23 +28,23 @@
 
 ## 🔧 Tech Stack
 
-| Component                  | Description                                |
-|----------------------------|--------------------------------------------|
-| **ESP32-C6 Mini**          | Wi-Fi enabled microcontroller (ESP chip)   |
-| **HC-SR04 Ultrasonic Sensor** | Measures distance to nearby objects    |
-| **Continuous Servo**       | Rotates sensor continuously in both directions |
-| **Processing (Java)**      | Real-time environment visualization        |
-| **Arduino CLI**            | CLI-based firmware flashing tool           |
-| **Linux (antiX)**          | Lightweight Debian-based OS used for dev   |
+| Component                      | Description                                 |
+|-------------------------------|---------------------------------------------|
+| **ESP32-C6 Mini**             | Wi-Fi enabled microcontroller (ESP chip)    |
+| **HC-SR04 Ultrasonic Sensor** | Measures distance to nearby objects         |
+| **Continuous Servo Motor**    | Rotates sensor continuously in both directions |
+| **Processing**                | Visualizes sensor data as radar scans       |
+| **Arduino CLI**               | Command-line firmware flashing              |
+| **Linux (antiX)**             | Lightweight Debian-based development OS     |
 
 ---
 
 ## 🔁 How It Works
 
-1. **Rotation Logic:** Servo rotates the sensor forward to ~360° and reverses.
-2. **Sensing:** At each approximate angle, HC-SR04 records object distance.
-3. **Transmission:** Data (angle + distance) is sent to PC via serial port.
-4. **Visualization:** Processing app reads and plots data to form a radar map.
+1. **Rotation Logic:** Servo motor rotates the ultrasonic sensor across ~360°.
+2. **Sensing:** At time-based angular steps, HC-SR04 records distance values.
+3. **Data Stream:** (angle, distance) data pairs are sent via USB serial.
+4. **Visualization:** Processing app receives serial data and plots a radar sweep in real time.
 
 ---
 
@@ -52,48 +53,47 @@
 - Obstacle Mapping in Robotics  
 - DIY Radar Simulation Projects  
 - Embedded Systems Visualization Demos  
-- Linux-based IoT Prototyping
+- Linux-based IoT Prototyping  
+- Educational Tools for Sensor Integration
 
 ---
 
 ## 🧠 Skills Demonstrated
 
-- Embedded C with Arduino  
-- Linux Terminal + Arduino CLI  
-- Serial Communication Protocol  
-- Java Programming in Processing  
-- Sensor Integration and Data Parsing  
-- Real-Time Visualization Techniques
+- Embedded C using Arduino Framework  
+- Linux Shell & Arduino CLI Programming  
+- Serial Data Transmission & Parsing  
+- Sensor Fusion and Environmental Scanning  
+- Processing Language for 2D Visualization  
 
 ---
 
 ## 🔧 Getting Started
 
-### Hardware:
-- ESP32-C6 Mini
-- HC-SR04 Ultrasonic Sensor
-- Continuous Rotation Servo (FS90R or SG90 modified)
-- Jumper wires + Breadboard
+### 🛠️ Hardware Requirements
 
-### Software:
-- Arduino CLI installed on Linux (antiX)
-- Java-based Processing IDE
-- Serial port configuration
+- ✅ ESP32-C6 Mini  
+- ✅ HC-SR04 Ultrasonic Sensor  
+- ✅ Continuous Rotation Servo Motor (e.g., FS90R or SG90 modified)  
+- ✅ Breadboard, Jumper Wires, and Power Source  
+- ✅ USB Cable (for serial connection)  
 
----
+### 🔗 Software Requirements
 
-## 🎵 Music Credit
-
-- Background Music (for demo): [Elektronomia – Sky High (NCS)](https://youtu.be/TW9d8vYrVFQ)
+- [Arduino CLI](https://arduino.github.io/arduino-cli/latest/)  
+- [Processing IDE](https://processing.org/download/)  
+- Compatible Linux OS (Tested on antiX – Debian lightweight)  
 
 ---
 
-## 👨‍💻 Author
+## 🎥 YouTube Demo
 
-**Mubendiran K**  
-[GitHub](https://github.com/MUBENDIRAN) • [LinkedIn](https://www.linkedin.com/in/mubendiran-k)  
+Experience **RadarLite** in action with real-time rotation, scanning, and data visualization:
+
+[![Watch the Demo](https://img.shields.io/badge/Watch-Demo-red?logo=youtube)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
+
 
 ---
 
-> _“RadarLite transforms low-cost components into an intelligent 360° scanner—real-time, visual, and minimalistic.”_
+
 
